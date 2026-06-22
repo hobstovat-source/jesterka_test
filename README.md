@@ -1,1 +1,0 @@
-# jesterka_test

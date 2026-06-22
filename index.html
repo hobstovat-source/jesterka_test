@@ -3,46 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frozen Parkour Duel</title>
+  <title>Zahrádka</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="game-shell">
-    <div class="hud">
-      <div class="score-card player-one">
-        <span>🦎 Hráč 1</span>
-        <strong id="score1">0</strong>
+  <div class="app-shell">
+    <header class="top-bar">
+      <div>
+        <p class="eyebrow">Moje zahrádka</p>
+        <h1>Zahradní království</h1>
       </div>
-      <div class="level-card">
-        <span>Level</span>
-        <strong id="level">1 / 10</strong>
+      <div class="money-panel">
+        <span>💰</span>
+        <strong id="money">0</strong>
+        <span>korun</span>
       </div>
-      <div class="score-card player-two">
-        <span>🐜 Hráč 2</span>
-        <strong id="score2">0</strong>
-      </div>
-    </div>
+    </header>
 
-    <canvas id="gameCanvas" width="1200" height="600"></canvas>
+    <main class="game-layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <h2>Semínka</h2>
+          <div id="seedButtons" class="seed-buttons"></div>
+        </section>
 
-    <div class="controls-panel">
-      <div class="controls-group controls-group--left">
-        <span>Hráč 1</span>
-        <div class="buttons">
-          <button data-key="ArrowLeft">◀</button>
-          <button data-key="ArrowUp">▲</button>
-          <button data-key="ArrowRight">▶</button>
-        </div>
-      </div>
-      <div class="controls-group controls-group--right">
-        <span>Hráč 2</span>
-        <div class="buttons">
-          <button data-key="a">A</button>
-          <button data-key="w">W</button>
-          <button data-key="d">D</button>
-        </div>
-      </div>
-    </div>
+        <section class="panel hint-panel">
+          <h3>Jak hrát</h3>
+          <p>Vyber semínko a klikni na políčko.</p>
+          <p>Hotové květiny můžeš utrhnout za peníze.</p>
+        </section>
+      </aside>
+
+      <section class="garden-panel">
+        <div id="garden" class="garden"></div>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>
