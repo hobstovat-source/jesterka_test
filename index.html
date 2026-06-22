@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frozen Parkour Duel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <div class="hud">
+      <div class="score-card player-one">
+        <span>🦎 Hráč 1</span>
+        <strong id="score1">0</strong>
+      </div>
+      <div class="level-card">
+        <span>Level</span>
+        <strong id="level">1 / 10</strong>
+      </div>
+      <div class="score-card player-two">
+        <span>🐜 Hráč 2</span>
+        <strong id="score2">0</strong>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="1200" height="600"></canvas>
+
+    <div class="controls-panel">
+      <div class="controls-group controls-group--left">
+        <span>Hráč 1</span>
+        <div class="buttons">
+          <button data-key="ArrowLeft">◀</button>
+          <button data-key="ArrowUp">▲</button>
+          <button data-key="ArrowRight">▶</button>
+        </div>
+      </div>
+      <div class="controls-group controls-group--right">
+        <span>Hráč 2</span>
+        <div class="buttons">
+          <button data-key="a">A</button>
+          <button data-key="w">W</button>
+          <button data-key="d">D</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
